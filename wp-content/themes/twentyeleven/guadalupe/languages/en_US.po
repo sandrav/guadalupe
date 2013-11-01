@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Guadalupe 1.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-11-14 12:22-0300\n"
+"PO-Revision-Date: 2012-11-14 12:22-0300\n"
+"Last-Translator: Sandra Vega <sandra.vega.ux@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive.php:6
+#: date.php:4
+#: date.php:17
+msgid "Archivo"
+msgstr "Archive"
+
+#: archive.php:10
+#: date.php:21
+msgid "Etiquetas"
+msgstr "Labels"
+
+#: archive.php:34
+#: index.php:61
+#: page.php:24
+#: page-sub.php:24
+msgid "Sorry, no posts matched your criteria."
+msgstr "Sorry, no posts matched your criteria."
+
+#: page-form.php:11
+#: single.php:12
+msgid "No se encuentran resultados para esta búsqueda."
+msgstr "Sorry, no posts matched your criteria."
+
+#: page-form.php:19
+msgid "¡Ayudá al colegio ahora!"
+msgstr ""
+
+#: page-form.php:20
+msgid "Tu nombre y apellido"
+msgstr ""
+
+#: page-form.php:22
+msgid "Tu D.N.I."
+msgstr ""
+
+#: page-form.php:24
+msgid "Tipo de tarjeta"
+msgstr ""
+
+#: page-form.php:26
+msgid "Número de tarjeta"
+msgstr ""
+
+#: page-form.php:28
+msgid "Vencimiento"
+msgstr ""
+
+#: page-form.php:31
+msgid "Código de seguridad"
+msgstr ""
+
+#: page-form.php:33
+msgid "¿Dónde lo encuentro?"
+msgstr ""
+
+#: page-form.php:36
+msgid "Quiero ayudar con:"
+msgstr ""
+
+#: page-form.php:48
+msgid "Por única vez"
+msgstr ""
+
+#: page-form.php:49
+msgid "Por 6 meses"
+msgstr ""
+
+#: page-form.php:50
+msgid "Indefinidamente"
+msgstr ""
+
+#: page-form.php:57
+msgid "Cualquier duda o consulta que tengas podés comunicarte al 011-15-4172-3460 de [día] a [día] de [hora] a [hora]."
+msgstr ""
+
+#: index.php:8
+msgid "Sobre el Colegio"
+msgstr "About the School"
+
+#: index.php:20
+msgid "La Fundación"
+msgstr ""
+
+#: index.php:27
+msgid "Leer más"
+msgstr "Read more"
+
+#: index.php:49
+msgid "Novedades"
+msgstr "News"
+
+#: index.php:50
+msgid "Ver todas las novedades"
+msgstr ""
+
+#~ msgid "Leer m&aacute;s"
+#~ msgstr "Read more"

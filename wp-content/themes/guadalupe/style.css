@@ -1,0 +1,644 @@
+/*
+Theme Name: Maria de Guadalupe
+Theme URI: http://google.com.ar/
+Description: Plantilla base.
+Version: 1.5
+Author: Matias Sueiro - Salvador Reynoso
+Tags: simple, base, two columns, widgets
+
+Maria de Guadalupe
+*/
+
+/*/////////////////////////*/
+/*//////////RESET//////////*/
+/*/////////////////////////*/
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none outside none;
+}
+body{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-attachment: scroll;
+	background-image: url(images/bodyBg.jpg);
+	background-repeat: repeat-x;
+	background-position: center top;
+	background-color: #EAE9F3;
+	color:#003d7c;
+}
+a img{
+	border: 0 none;
+}
+/*/////////////////////////*/
+/*/////////SPRITE//////////*/
+/*/////////////////////////*/
+.sprite{
+	background-image: url(images/sprite.png);
+	display: inline-block;
+}
+.sprite.fb{
+	width: 24px;
+	height:24px;
+	float:left;
+	background-position: -0 0;
+	margin: 0 10px 0 0;
+}
+.sprite.tw{
+	width: 24px;
+	height:24px;
+	float:left;
+	background-position: -24px 0px;
+}
+.sprite.phoneIcon{
+	background-position: 0 -68px;
+    height: 37px;
+    width: 30px;
+}
+.sprite.emailIcon{
+	background-position: -48px 0;
+    height: 18px;
+    width: 29px;
+}
+.sprite.titleBg{
+	background-position: 0 94px;
+    height: 40px;
+    width: 260px;
+}
+/*/////////////////////////*/
+/*//////////COMMON/////////*/
+/*/////////////////////////*/
+.alignleft, img.alignleft {
+	margin-right: 10px;
+	display: inline;
+	float: left;
+	}
+.alignright, img.alignright {
+	margin-left: 10px;
+	display: inline;
+	float: right;
+	}
+.aligncenter, img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+	}
+
+
+#mainContainer {	
+	margin: auto;
+	width: 990px;	
+	overflow: hidden;		
+}
+#header {	
+	margin: auto;
+	width: 990px;
+	float: left;
+	height: 179px;
+}
+.logo{
+	float:left;
+	height: 119px;
+    overflow: hidden;
+	width: 393px;
+}
+
+.banner{
+  margin-bottom:10px;
+}
+#sidebar{
+	float:left; 
+	padding: 10px;
+	color:white;
+}
+#sidebar a{
+	color:white;
+}
+#sidebar .active a{
+	display:none;
+}
+.navs{	
+	overflow: hidden;
+	float:right;
+}
+.socialNav{
+	float:right;
+	/*width: 60px;
+	height:30px;*/	
+	padding-top:10px;
+}
+.socialNav li a{
+	height:24px;
+	display:block;
+}
+.mainNav{
+	float:right;	
+	overflow: hidden;
+	margin:12px 0;
+}
+.mainNav li{
+	float:left;	
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	overflow: hidden;
+	border-right: 2px solid #FFF;		
+}
+.mainNav li:first-child{
+	background-position: left -24px;
+}
+.mainNav li:last-child{
+	background-position: right -24px;
+	border-right: 0px none;		
+}
+.mainNav li a{
+	color: #FFF;	
+	text-decoration: none;
+	font-style: italic;
+	padding: 0 15px;	
+	display:block;	
+}
+.mainNav li a:hover{
+	color: #94BA40 ;	
+	text-decoration: underline;		
+}
+.mainNav li:last-child a{
+	border:none;
+}
+#mainContent {
+	background-color: #FFF;
+	margin: auto;
+	width: 990px;
+	float: left;	
+	min-height: 200px;
+	position:relative;	
+	z-index:110;
+}
+
+#footer {
+	background-color: #013D7C;
+	color:#FFF;
+	margin: auto;
+	width: 100%;
+	height: 140px;
+	float: left;
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+	position:relative;	
+	z-index:100;
+}
+#footer .footerTop{
+	height:30px;
+	background: #FFF;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px; 
+	margin: 0 auto;
+    width: 990px;
+}
+#footer .footerContent{
+	margin: 20px auto;
+	width: 930px;
+}
+#footer .contactTitle{
+	font-size:32px;
+	font-weight:bold;
+	font-style: italic;
+	float: left;
+	margin: 0 100px 0 0;
+}
+#footer .email{
+	float: left;
+	font-size:18px;
+	font-weight:normal;
+	margin: 13px 100px 0 0;
+}
+#footer .email .sprite, #footer .phone .sprite{
+	float: left;
+	margin-right:5px; 
+}
+#footer .phone .text{
+	float: left;
+	margin: 3px 0 0;
+}
+#footer .email .text{
+	float: left;
+}
+#footer .email .text a{
+	color:#FFF;
+	text-decoration:none;
+}
+#footer .phone{
+	float: left;
+	font-size:18px;
+	font-weight:normal;
+	margin: 13px;
+}
+#footer .footerContent  .information{
+	text-align:left;
+}
+#footer .footerContent  .information .title{
+	font-weight:bold;
+	font-size:13px;
+}
+#footer .footerContent  .information a{
+	color:#FFF;
+}
+#footer .footerContent  .information a:hover{
+	color:#94BA40;
+}
+/*/////////////////////////*/
+/*///////////HOME//////////*/
+/*/////////////////////////*/
+
+.home #mainContent{
+	background-image: url(images/mainContainerHomeBg.jpg);
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+.home #footer .footerTop{
+	background-image: url(images/mainContainerHomeBg.jpg);
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+
+.home .col1{	
+	width:350px;
+	float:left;
+	background:#dce8c0;
+	padding:20px;
+}
+.home .col1 .sectionResume {
+	float:left;
+	margin: 0 0 30px 0;
+}
+.home .col1 .sectionResume p{
+	margin:10px 10px 20px 10px;
+	font-size: 14px;
+}
+.home .col1 .sectionResume a{
+	margin:25px 0;
+	font-size: 16px;
+	color: #003D7C;
+	display: block;
+}
+
+.home .col1 .sectionResume .picresume{
+	margin:0 20px 0 0;
+}
+.home .col1 .title{		
+	font-style:italic;
+	padding:5px 0 0 10px;
+	font-size:26px;
+}
+.home .col1 .newsletter, .home .col1 .main-link{
+	float:left;
+	background: #b3d16d;
+	background: -moz-linear-gradient(top,  #b3d16d 0%, #94ba40 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3d16d), color-stop(100%,#94ba40));
+	background: -webkit-linear-gradient(top,  #b3d16d 0%,#94ba40 100%);
+	background: -o-linear-gradient(top,  #b3d16d 0%,#94ba40 100%);
+	background: -ms-linear-gradient(top,  #b3d16d 0%,#94ba40 100%);
+	background: linear-gradient(top,  #b3d16d 0%,#94ba40 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3d16d', endColorstr='#94ba40',GradientType=0 );
+	padding: 20px;
+	width: 310px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.home .col1 .newsletter h3{
+	color:#003D7C;
+	font-size:15px;
+	margin-bottom:10px;
+}
+
+.home .col1 .newsletter #s2email{
+	padding:5px;
+	border: 1px solid; 
+	margin-right:10px;
+}
+.home .col1 .newsletter p{
+	float:left;
+}
+.home .col1 .newsletter label{
+	margin:10px 0;
+}
+.home .col1 .main-link {
+	margin-top:15px;
+	padding: 10px 20px; 
+}
+.home .col1 .main-link a{
+	font-weight:bold;
+	font-size:18px;
+	color: #003D7C;
+	text-decoration:none;
+}
+.home .col1 .main-link a:hover{
+	text-decoration:underline;
+}
+
+
+input[name="subscribe"] {
+  margin-top:15px;
+  padding:0 5px;
+  height:31px;
+}
+
+input[name="unsubscribe"] {
+  display:none;
+}
+
+.home .col2{	
+	padding: 20px;
+    width: 560px;
+	float:right;
+}
+.home .col2 .title, .page-template-archive-php .col2 .title{
+	font-style:italic;
+	padding:5px 0 0 10px;	
+	font-size:26px;
+}
+.home .col2 .seeAll, .home .col2 .seeAll a{
+	float:right;
+	font-size:13px;
+	color:#003D7C;
+	margin-top: 10px;
+}
+.home .col2 .post, .page-template-archive-php .col2 .post{
+	float:left;
+	margin:20px 0 10px 0;
+}
+.home .col2 .post .date, .page-template-archive-php .col2 .post .date{
+	text-transform:uppercase;
+	margin:10px 0;
+	color: #000;
+}
+
+.home .col2 .post .more-link, .home .col2 .post .more-link a, .page-template-archive-php .col2 .post .more-link, .page-template-archive-php .col2 .post .more-link a  {
+	display:block;
+	margin:10px 0;
+	color: #003D7C;
+}
+
+.home .col2 img, .page-template-archive-php .col2 img{
+	float:left;
+	margin-right:10px;
+}
+.home .col2 .postTitle, .home .col2 .postTitle a, .page-template-archive-php .col2 .postTitle, .page-template-archive-php .col2 .postTitle a{
+	color:#003D7C;
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.home .col2 .postContent, .page-template-archive-php .col2 .postContent{
+	font-size:13px;
+	color:#000;
+}
+
+.postContent p{
+	margin-bottom:15px;
+}
+/*/////////////////////////*/
+/*///////////PAGE//////////*/
+/*/////////////////////////*/
+.page.page-template-page-sub-php .col1,
+.page.page-template-default .col1,
+.page.page-template-archive-php .col1 {
+	width: 250px; /* revisar medidas */
+	float: left;
+	margin: 20px;
+	padding: 10px;
+	color: #003D7C;
+	font-size: 16px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #b3d16d;
+	background: -moz-linear-gradient(top,  #b3d16d 0%, #94ba40 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3d16d), color-stop(100%,#94ba40));
+	background: -webkit-linear-gradient(top,  #b3d16d 0%,#94ba40 100%);
+	background: -o-linear-gradient(top,  #b3d16d 0%,#94ba40 100%);
+	background: -ms-linear-gradient(top,  #b3d16d 0%,#94ba40 100%);
+	background: linear-gradient(top,  #b3d16d 0%,#94ba40 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3d16d', endColorstr='#94ba40',GradientType=0 );
+	-webkit-box-shadow: 1px 1px 5px 1px #666;
+	-moz-box-shadow: 1px 1px 5px 1px #666;
+	box-shadow: 1px 1px 5px 1px #666;
+}
+.page .wp-post-image {
+	float: left;
+	margin: 20px;
+}
+.page.page-template-page-sub-php .col2,
+.page.page-template-default .col2,
+.page.page-template-archive-php .col2 {
+	padding: 20px;
+    width: 640px;
+	min-height: 250px;
+	float: right;
+}
+.page h2.pageTitle,
+.single h2.pageTitle{
+	font-size: 32px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style: italic;	
+	letter-spacing: -1px;
+	font-weight: bold;
+	margin: 15px;
+}
+.page h3.subpageTitle {
+	font-size: 18px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style: italic;
+	color: #003D7C;
+	letter-spacing: -1px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.page .col1 ul li a,
+.page .col1 ul li a:visited,
+.page .col1 ul li a:active {
+	margin-bottom: 5px;
+	display: block;
+	color: #003D7C;
+}
+.page .col1 ul li.current_page_item a {
+	font-weight: bold;
+}
+.page.page-template-page-sub-php .col2 p,
+.page.page-template-default .col2 p {
+	font-size: 16px;
+	color: #003D7C;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-bottom: 10px;
+}
+.page .col2 ul {
+	font-size: 16px;
+	color: #333;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 0 0 10px 20px;
+}
+.page .col2 ul li {
+	list-style: circle none outside;
+}
+.page.page-template-page-form-php .col1 {
+	width: 450px;
+	float: left;
+	font-size: 16px;
+	margin: 0px 20px 20px 20px;
+}
+.page.page-template-page-form-php .col2 {
+	margin: 20px;
+    width: 460px;
+	float: right;
+}
+.page.page-template-page-form-php .col2 #donacion fieldset {
+	border: none;
+}
+.page.page-template-page-form-php .col2 #donacion legend {
+	font-size: 32px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style: italic;
+	color: #003D7C;
+	letter-spacing: -1px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.page.page-template-page-form-php .col2 #donacion .aporte legend {
+	padding-top: 10px;
+}
+.page.page-template-page-form-php .col2 #donacion .datos label {
+	display: block;
+	float: left;
+	width: 140px;
+	height: 20px;
+	padding: 10px 10px 0 0;
+	margin: 5px 0 0 0;
+	text-align: right;
+	font-size: 13px;
+	color: #333;
+}
+.page.page-template-page-form-php .col2 #donacion .datos input {
+	width: 270px;
+	height: 30px;
+	margin: 5px 0 0 0;
+	padding: 0 10px;
+	font-size: 13px;
+	font-style: italic;
+	color: #CCC;
+}
+.page.page-template-page-form-php .col2 #donacion .datos input#inTarjeta {
+	font-style: normal;
+	color: #666;
+}
+.page.page-template-page-form-php .col2 #donacion .datos input#inMes,
+.page.page-template-page-form-php .col2 #donacion .datos input#inAnio,
+.page.page-template-page-form-php .col2 #donacion .datos input#inCodigo {
+	width: 85px;
+}
+.page.page-template-page-form-php .col2 #donacion .datos a.ayudaCodigo {
+	color: #F76706;
+	font-size: 13px;
+	color: #003D7C;
+}
+.page.page-template-page-form-php .col2 #donacion .tipoAporte #btnAyudar {
+	width: 100px;
+	height: 40px;
+	color: #FFF;
+	font-family: Tahoma;
+	font-size: 16px;
+	text-decoration: none;
+	margin: 25px 0 0 150px;
+	border: 1px solid #FFF;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(top, #FE9900, #FF6600);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FE9900), to(#FF6600));
+	background: -moz-linear-gradient(top, #FE9900, #FF6600);
+	box-shadow: 1px 2px 0 #999;
+	-webkit-box-shadow: 1px 2px 0 #999;
+	-moz-box-shadow: 1px 2px 0 #999;
+	cursor: pointer;
+}
+.page.page-template-page-form-php .col2 #donacion .aporte p,
+.page.page-template-page-form-php .col2 #donacion .tipoAporte p {
+	width: 270px;
+	padding: 0 0 0 150px;
+	overflow: hidden;
+	margin: 2px 0;
+}
+.page.page-template-page-form-php .col2 #donacion .aporte p.nota,
+.page.page-template-page-form-php .col2 #donacion .tipoAporte p.nota {
+	float: left;
+	width: 240px;
+	margin: 15px 0 0 150px;
+	padding: 0px;
+	clear: both;
+	font-size: 13px;
+	line-height: 18px;
+	color: #666;
+}
+.page.page-template-page-form-php .col2 #donacion .aporte p input,
+.page.page-template-page-form-php .col2 #donacion .tipoAporte p input {
+	float: left;
+}
+.page.page-template-page-form-php .col2 #donacion .aporte p input#valXcantidad,
+.page.page-template-page-form-php .col2 #donacion .tipoAporte p input#valXcantidad {
+	width: 65px;
+	margin: 0px 0 0 0;
+	font-size: 13px;
+	color: #333;
+}
+.page.page-template-page-form-php .col2 #donacion .aporte p select,
+.page.page-template-page-form-php .col2 #donacion .tipoAporte p select {
+	font-size: 13px;
+	float: left;
+	height: 30px;
+	margin: 5px 0 0;
+	padding: 5px 5px 5px 10px;
+}
+.page.page-template-page-form-php .col2 #donacion .aporte p label,
+.page.page-template-page-form-php .col2 #donacion .tipoAporte p label {
+	display: block;
+	float: left;
+	width: 200px;
+	margin: 0px 0 0 10px;
+	padding-top:12px;
+	font-size: 13px;
+	color: #333;
+	width:45px;
+}
+/*/////////////////////////*/
+/*///////////SINGLE////////*/
+/*/////////////////////////*/
+.single .postDate {
+	font-size: 16px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #003D7C;
+	letter-spacing: -1px;
+	margin: 15px;
+	display: block;
+	text-transform: uppercase;
+}
+.single p {
+	font-size: 16px;
+	color: #333;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 15px;
+}
+
+/*/////////////////////////*/
+/*///////////INDEX/////////*/
+/*/////////////////////////*/
+.homeSideVideo{
+	width:100%;
+	height: 225px;
+}

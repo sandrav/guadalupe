@@ -1,0 +1,9 @@
+/FirePHPCore/
+.buildpath
+.project
+.htaccess
+wp-config.php
+.settings/
+.errordocs/
+cgi/
+stats/
